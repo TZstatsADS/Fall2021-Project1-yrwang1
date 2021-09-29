@@ -5,7 +5,7 @@ output: html_notebook
 ![ ](../figs/love_sculpture1.jpg)
 
 ## I. Background
-#### It is undeniable that love plays an essential role in our life; we can find it discussed in songs, movies, novels, in every corner of life. The nature of love has been a mainstay in philosophy since the time of the Ancient Greeks. This report explores what philosophers from different periods and schools say about love.  
+#### It is undeniable that love plays an essential role in our life. Although it can not be seen or touched, it is discussed in songs, movies, novels, in every corner of life. The nature of love has been a mainstay in philosophy since the time of the Ancient Greeks. This report explores what philosophers from different periods and schools say about love.  
 
 #### The dataset used in this report is downloaded from <https://www.kaggle.com/kouroshalizadeh/history-of-philosophy>, which is a corpus of over 360,000 sentences from over 50 texts spanning 13 schools of philosophy. You can find more information about the Philosophy Data Project on <http://philosophydata.com/index.html>
 
@@ -85,14 +85,12 @@ print(school)
 #subset dataframes by different schools
 plato<-df%>%filter(school=='plato')
 aristotle<-df%>%filter(school=='aristotle')
-empiricism<-df%>%filter(school=='empiricism')
 rationalism<-df%>%filter(school=='rationalism')
-german_idealism<-df%>%filter(school=='german_idealism')
 nietzsche<-df%>%filter(school=='nietzsche')
 feminism<-df%>%filter(school=='feminism')
 ```
-Since there are too many schools in the dataset, I select 6 of them as representatives based on the number of observations each school talked about love, which are:   
-**Plato, Aristotle, Empiricism, Rationalism, German Idealism, Nietzsche, and Feminism Philosophy.**   
+Since there are too many schools in the dataset, I select 5 of them as representatives based on the number of observations each school talked about love, which are:   
+**Plato, Aristotle, Rationalism, Nietzsche, and Feminism Philosophy.**   
 The following analysis will only be based on these chosen schools.
 
 ### 3. Data mining
@@ -142,62 +140,54 @@ clean<-function(sub){
 }
 ```
 ## III. Obtain word frequent and word cloud of different periods
-The word frequency chart and word cloud of the three periods we have in our data are consistent with each other, and are shown below.
+I try to find what philosophers say about love by counting the frequency of each words, plotting a word cloud to make it more intuitively, and comparing the results. The word frequency chart and word cloud of the three periods we have in our data are consistent with each other, and are shown below.
 
 We could see that in Ancient philosophy, philosophers were interested in studying the relationship between love and frienship. For them, love is desirable and beautiful.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(ancient)
 ```
 
+It can be indicated that the Mordern philosophy studied a lot about god. For them, love and hatred are antonyms, but love in general should be pleasure.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(modern)
 ```
 
+Feminism occupies a large part in the Contemporary philosophy in our dataset, and that's why we see the most frequent word about love is word like woman and husband. But anyway, we could suggests from the plots that love must be a vital part of life of people of different identities during the Contemporary philosophy.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(contemporary)
 ```
-We could see from the above results that
+We could see from the above results that regarless of time period,  philosophers are always interesting in studying about love. Whether you are from ancient or nowadays, love always plays an important role in our lives.
 
 ## IV. Obtain word frequency and word cloud of different schools
-I try to find what philosophers say about love by counting the frequency of each words, plotting a word cloud to make it more intuitively, and comparing the results of different schools.
+The word frequency chart and word cloud of different schools are consistent with each other, and we can do brief analysis based on them.
 
-According to Aristotle philosophy, love is always talked along with friendship, which indicates that love and friendship may be a main topic learned by Aristotle philosophy, and in their opinion, love is a very pleasant thing.
+According to Aristotle philosophy, love is always talked along with friendship, which indicates that love and friendship may be a main topic for Aristotle philosophy, and in their opinion, love is a very pleasant thing.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(aristotle)
 ```
 
-As for Plato, love is a beautiful and desirable thing. love is a desire for beauty. god
+As for Plato, the result is consistent with its famous saying "love is a desire for beauty" and "The god of love lives in a state of need". It shows that love is a beautiful and desirable thing,
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(plato)
 ```
 
-In Emiricism philosophy, the most frequent word about love is hatred.
-```{r, warning=FALSE, message=FALSE, echo = FALSE}
-clean(empiricism)
-```
-
-
+For Rationalism philosophy, 
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(rationalism)
 ```
 
-
-```{r, warning=FALSE, message=FALSE, echo = FALSE}
-clean(german_idealism)
-```
-
-Nietzsche philosophy always mention "life" when talking about "love".
+Nietzsche philosophy always mention "life" when talking about "love", indicating that love is a vital part of human life.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(nietzsche)
 ```
 
-It is not surprsing at all to find that the most frequent word for Frminism philosophy is woman, and there are several words that express the identities of different people.
+It is not surprsing at all that the most frequent word for Frminism philosophy is woman, and there are several words on the top list that express the identities of different people. We could see that no matter you are male or female, parent or children, feminists view love as vital part of life of all knids of people.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(feminism)
 ```
-
-
+The above results suggests that although philosophers may have different focuse and opinion on the topic about love, love is an unavoidable part in everyone's life and it brings people pleasure. 
 
 # Conclusion:
+Regarless of time period and schools, philosophers are always interesting in studying about love. Whether you are from ancient or nowadays, love always plays an important role in our lives.
 
-Love is a very essential part of our life, and this is agreed by philosophers from all different schools and periods.
+Although philosophers may have different focuse and opinion on the topic about love, it is agreed by philosophers from all different schools and periods that love brings people pleasure. 
