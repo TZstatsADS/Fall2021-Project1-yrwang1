@@ -171,12 +171,12 @@ As for Plato, the result is consistent with its famous saying "love is a desire 
 clean(plato)
 ```
 
-For Rationalism philosophy, 
+For Rationalism philosophy, god is always talked when mentioning love. And love is a object but also pleasant.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(rationalism)
 ```
 
-Nietzsche philosophy always mention "life" when talking about "love", indicating that love is a vital part of human life.
+Nietzsche philosophy always mention "life" when talking about "love", indicating that love is a vital part of human life. But their attitude toward love could not be seen from the result.
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(nietzsche)
 ```
@@ -185,9 +185,9 @@ It is not surprsing at all that the most frequent word for Frminism philosophy i
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
 clean(feminism)
 ```
-The above results suggests that although philosophers may have different focuse and opinion on the topic about love, love is an unavoidable part in everyone's life and it brings people pleasure. 
+The above results suggests that although philosophers may have different focuse and opinion on the topic about love, love is an unavoidable part in everyone's life and most philosophers believe it brings people pleasure. 
 
 # Conclusion:
-Regarless of time period and schools, philosophers are always interesting in studying about love. Whether you are from ancient or nowadays, love always plays an important role in our lives.
+Regarless of time period and schools, philosophers are always interesting in studying about love. Whether you are from ancient or nowadays, love always plays a role in our lives.
 
-Although philosophers may have different focuse and opinion on the topic about love, it is agreed by philosophers from all different schools and periods that love brings people pleasure. 
+Although philosophers may have different focuse and opinion on the topic about love, it is agreed by most philosophers from different schools and periods that love brings people pleasure. 
