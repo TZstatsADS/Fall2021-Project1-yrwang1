@@ -1,6 +1,6 @@
 # Applied Data Science @ Columbia
 ## Fall 2021
-## Project 1: A "data story" on the history of philosophy
+## Project 1: A "Data Story" on the History of Philosophy
 
 <img src="figs/100126-the-glass.jpeg" width="500">
 
@@ -9,10 +9,10 @@ This is the first and only *individual* (as opposed to *team*) project this seme
 
 Term: Fall 2021
 
-+ Projec title: Lorem ipsum dolor sit amet
-+ This project is conducted by [your name]
++ Projec title: A "Data Story" on the History of Philosophy - What Philosophers Say about Love
++ This project is conducted by [Yarong Wang]
 
-+ Project summary: [a short summary] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
++ Project summary: It is undeniable that love plays an essential role in our life; we find it discussed in songs, movies, novels, in every corner of life. The nature of love has been a mainstay in philosophy since the time of the Ancient Greeks. This report explores what philosophers say about love. First, the raw data 'philosophy_data.csv' saved in data file is processed by filtering keywords and removing stopwords. Then, the report focuses on what philosophers from different schools and periods say about love, find the common characteristics and compare the difference. And finally, conclusions are made based on the above findings.
 
 Following [suggestions](http://nicercode.github.io/blog/2013-04-05-projects/) by [RICH FITZJOHN](http://nicercode.github.io/about/#Team) (@richfitz). This folder is orgarnized as follows.
 
